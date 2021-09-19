@@ -1,14 +1,17 @@
-@extends('layouts.app',[
-    'page' => 'Example Page',
-    'title' => 'Example'
-])
+<x-layout>
+    {{-- this var below is from controller. --}}
+    <x-slot name="page">{{ $page }}</x-slot>
+    <x-slot name="title">{{ $title }}</x-slot>
+    {{-- # --}}
 
-@section('breadcrumb')
-    <li class="breadcrumb-item active">Example Page</li>
-@endsection
+    <x-slot name="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ route('designations.index') }}">{{ __('Designation') }}</a></li>
+        <li class="breadcrumb-item active">{{ __('Create') }}</li>
+    </x-slot>
 
-@section('content')
-<div class="row">
 
-</div>
-@endsection
+    {{-- content --}}
+    <div class="row">
+        This is content for the example page.
+    </div>
+</x-layout>
