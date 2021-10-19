@@ -19,6 +19,10 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'auth.login');
 Auth::routes();
 
+Route::post('test', function () {
+    return 'oke';
+});
+
 Route::middleware('auth')->group(function () {
 
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback");
+
+@import "admin-lte/plugins/fontawesome-free/css/all.min.css";
+@import "admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css";
+@import "admin-lte/plugins/toastr/toastr.min.css";
+@import "admin-lte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css";
+@import "admin-lte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css";
+@import "admin-lte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css";
+@import "admin-lte/dist/css/adminlte.min.css";
+
+.top-rights {
+    position: fixed;
+    top: 56px;
+    right: 8px;
+}
+/* dropdown hover */
+
+.dropbtn {
+    /* background-color: #04AA6D; */
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffff;
+    right: 25px;
+    top: 6px;
+    border-radius: 5px;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 13px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 10px 13px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* preloader */
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    background: #ffff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disppear {
+    animation: vanish 1s forwards;
+}
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* tailwind color */
+.bg-green-50 {
+    background-color: #ecfdf5;
+}
+.bg-green-100 {
+    background-color: #d1fae5;
+}
+
+.bg-green-200 {
+    background-color: #a7f3d0;
+}
+
+.bg-green-300 {
+    background-color: #6ee7b7;
+}
+
+.bg-green-500 {
+    background-color: #10b981;
+}
+
+.bg-green-600 {
+    background-color: #059669;
+}
+
+.bg-green-700 {
+    background-color: #047857;
+}
+
+.bg-green-800 {
+    background-color: #065f46;
+}
+
+.bg-green-900 {
+    background-color: #064e3b;
+}
+
+/* gray */
+.bg-gray-50 {
+    background-color: #f9fafb;
+}
+
+.bg-gray-100 {
+    background-color: #f3f4f6;
+}
+.bg-gray-200 {
+    background-color: #e5e7eb;
+}
+
+.bg-gray-300 {
+    background-color: #d1d5db;
+}
